@@ -8,6 +8,17 @@ body {
 div {
 	border: 1px solid Chocolate;
 }
+html {
+	-webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 /*Navigation*/
 .top-navigation {
   background-color: #fff;
@@ -21,26 +32,27 @@ div {
 }
 ul {
   list-style: none;
-  margin-top: 25px;
+  margin-top: 1.7rem;
 }
 .links {
 	float: right;
-}
-.links > li {
-   display: inline-block;
-}
+	font-size: 1.04rem;
 
+}
+.top-navigation .links > li {
+   display: inline-block;
+   margin-left: 1.563rem;
+}
+.active {
+	color: #4c5058;
+	font-weight: 500;
+}
 .logo {
 	width: 26px;
 	height: 4.375rem;
 }
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+a:hover {
+	color: #4c5058;
+	cursor: pointer;
 }
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
+
