@@ -1,6 +1,46 @@
 body {
 	background-color: LightGray;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: .03em;
 }
 div {
 	border: 1px solid Chocolate;
 }
+/*Navigation*/
+.top-navigation {
+  background-color: #fff;
+}
+
+.top-navigation > .content {
+ width: 970px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0px .938px;
+}
+ul {
+  list-style: none;
+  margin-top: 25px;
+}
+.links {
+	float: right;
+}
+.links > li {
+   display: inline-block;
+}
+
+.logo {
+	width: 26px;
+	height: 4.375rem;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
