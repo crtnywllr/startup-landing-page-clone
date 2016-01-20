@@ -94,3 +94,20 @@ button:hover {
 	cursor: pointer;
 	background-color: red;
 }
+/*Icons Section*/
+.cases h1 {
+	color: #1d1e21;
+	font-size: 3.125rem;
+	text-align: center;
+	font-weight: 300;
+}
+.icons {
+	display: inline-block;
+}
+.caption {
+	text-align: center
+}
+.caption img {
+	height: 127px;
+	width: 127px;
+}
