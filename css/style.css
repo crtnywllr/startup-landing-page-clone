@@ -30,12 +30,20 @@ ul {
   list-style: none;
   margin-top: 1.7rem;
 }
+.top-navigation {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	background-color: #fff;
+	border-bottom: 1 px solid #ddd;
+}
 .top-navigation .links {
 	float: right;
 	margin-top: 25px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.04rem;
 	color: #838994;
+	
 }
 .top-navigation .links > li {
    display: inline-block;
@@ -95,19 +103,33 @@ button:hover {
 	background-color: red;
 }
 /*Icons Section*/
-.cases h1 {
+.cases .content {
+	margin-top: 7.875rem;
+	padding: 0px 0px;
 	color: #1d1e21;
-	font-size: 3.125rem;
 	text-align: center;
+}
+.cases h2 {
+	font-size: 2.75rem;
 	font-weight: 300;
+	margin: 1.625rem 0 3.125rem;
 }
-.icons {
+.cases h3 {
+	font-size: 1.563rem;
+	font-weight: 400;
+	margin-top: 2.5rem 0px 1.875rem;
+}
+.cases .devices {
+	width: 33.3333333%;
 	display: inline-block;
+	box-sizing: border-box;
+	height: 4em;
+	float: left;
 }
-.caption {
-	text-align: center
-}
-.caption img {
+.devices img {
 	height: 127px;
 	width: 127px;
+}
+.flexbox {
+	display: flex;
 }
