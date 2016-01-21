@@ -22,7 +22,6 @@ html {
 /*Navigation*/
 .content {
  width: 970px;
-  height: 70px;
   margin: 0 auto;
   padding: 0px .938px;
 }
@@ -31,6 +30,7 @@ ul {
   margin-top: 1.7rem;
 }
 .top-navigation {
+	height: 70px;
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
@@ -114,26 +114,35 @@ button:hover {
 	font-weight: 300;
 	margin: 1.625rem 0 3.125rem;
 }
-.cases h3 {
+.cases .devices h3 {
 	font-size: 1.563rem;
 	font-weight: 400;
 	margin-top: 2.5rem 0px 1.875rem;
 }
-.cases .devices {
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cases .devices > li {
 	width: 33.3333333%;
 	display: inline-block;
 	box-sizing: border-box;
 	height: 4em;
 	float: left;
 }
-.devices img {
+.devices li img {
 	height: 127px;
 	width: 127px;
 }
-.flexbox {
-	display: flex;
-}
+
 /*Footer*/
+.social {
+	text-align: center;
+	overflow: auto;
+	padding bottom: 9.375rem;
+	background color: #fff;
+}
 .social li {
 	display: inline-block;
 }
