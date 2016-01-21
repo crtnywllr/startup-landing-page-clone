@@ -133,3 +133,7 @@ button:hover {
 .flexbox {
 	display: flex;
 }
+/*Footer*/
+.social li {
+	display: inline-block;
+}
