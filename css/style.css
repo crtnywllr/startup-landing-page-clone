@@ -1,16 +1,11 @@
 body {
-	background-color: #fff;
+	/*background-color: LightGray;*/
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #838994;
-	letter-spacing: .03em;
-}
-div {
-	border: 0px solid Chocolate;
-}
-html {
 	-webkit-font-smoothing: antialiased;
-  -webkit-box-sizing: border-box;
+}
+
+html {
+	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -19,37 +14,45 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   }
+ul {
+  list-style: none;
+ }
+
 /*Navigation*/
 .content {
  width: 970px;
   margin: 0 auto;
   padding: 0px .938px;
 }
-ul {
-  list-style: none;
-  margin-top: 1.7rem;
-}
+
 .top-navigation {
-	height: 70px;
+	height: 4.5rem;
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
 	background-color: #fff;
 	border-bottom: 1 px solid #ddd;
 }
+
+.top-navigation > .content {
+	height: 4.375rem;
+}
+
+.top-navigation .logo {
+	height: 4.375rem;
+}
+
 .top-navigation .links {
 	float: right;
 	margin-top: 25px;
-	font-family: 'Roboto', sans-serif;
 	font-size: 1.04rem;
 	color: #838994;
-	
 }
-.top-navigation .links > li {
+.top-navigation .links  li {
    display: inline-block;
    margin-left: 1.563rem;
    }
-.top-navigation .links .active {
+.top-navigation .links li.active {
 	color: #4c5058;
 	font-weight: 500;
 }
@@ -59,53 +62,57 @@ ul {
 	cursor: pointer;
 }
 
-.logo {
-	width: 26px;
-	height: 4.375rem;
-}
+
 /*Introduction Section*/
 .introduction {
 	background-image: url('http://i.imgur.com/3ysb0fG.jpg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	text-align: center;
 	height: 45.938rem;
 	overflow: auto;
 }
-.introduction h1 {
+.introduction h1, .introduction h3 {
 	color: white;
-	font-size: 2.9rem;
+	text-align: center;
 	font-weight: 300;
+	
+}
+.introduction h1 {
+	font-size: 3.125rem;
 	margin-top: 17.5rem;
 }
 .introduction h3 {
-	color: white;
-	font-size: 1.5rem;
-	font-weight: 300;
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
 }
 
 button {
 	background-color: #f15a29;
-	border-color: #f15829;
+	border-color: #f15a29;
 	border-radius: 4px;
 	border-style: none;
 	text-shadow: none;
 	color: white;
 	text-align: center;
 	width: 9.68rem;
-	padding: 1rem 1.563rem;
+	padding: 1rem 1.5rem;
 	font-size: 1.125rem;
 	transition: background-color .5s ease;
 }
 button:hover {
 	cursor: pointer;
-	background-color: red;
+	background-color: #d9400e;
 }
 /*Icons Section*/
+.cases {
+	background-color: #fff;
+	overflow: hidden;
+	padding-bottom: 5rem;
+}
 .cases .content {
 	margin-top: 7.875rem;
-	padding: 0px 0px;
+	padding: none;
 	color: #1d1e21;
 	text-align: center;
 }
@@ -114,51 +121,52 @@ button:hover {
 	font-weight: 300;
 	margin: 1.625rem 0 3.125rem;
 }
+.cases .devices > li {
+	width: 33.3333333%;
+	float: left;
+}
 .cases .devices h3 {
 	font-size: 1.563rem;
 	font-weight: 400;
 	margin-top: 2.5rem 0px 1.875rem;
 }
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.cases .devices > li {
-	width: 33.3333333%;
-	display: inline-block;
-	box-sizing: border-box;
-	height: 4em;
-	float: left;
-}
-.devices li img {
-	height: 127px;
-	width: 127px;
-}
 
 /*Footer*/
+.social hr {
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.33rem 0;
+}
 .social {
 	text-align: center;
 	overflow: auto;
 	padding bottom: 9.375rem;
 	background color: #fff;
 }
-.social li {
+.social .icons > li {
 	display: inline-block;
 	border-radius: 1.25rem;
 	width: 2.5rem;
 	height: 2.5rem;
-	margin-left: 5px;
+	margin: 1.25rem 5px;
 	border: 1px solid #eaebec;
 	padding: 0.625rem 0;
 }
-.twitter {
+.social .icons li:hover{
+	cursor: pointer;
+}
+.social .twitter {
 	color: #55acee;
 }
-.facebook {
+.social .facebook {
 	color: #4c66a4;
 }
-.instagram {
+.social .instagram {
 	color: #3f729b;
+}
+.social .copy {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
 }
 
