@@ -71,6 +71,7 @@ ul {
 	background-size: cover;
 	height: 45.938rem;
 	overflow: auto;
+	text-align: center;
 }
 .introduction h1, .introduction h3 {
 	color: white;
@@ -170,7 +171,7 @@ button:hover {
 }
 .social .copy {
 	font-size: 0.9rem;
-	font-weight: 300;
+	font-weight: 100;
 	color: #838994;
 }
 
