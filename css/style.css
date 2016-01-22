@@ -137,6 +137,10 @@ button:hover {
 	border-top: 1px solid #eaebec;
 	margin: 1.33rem 0;
 }
+.social h5 {
+	font-weight: 300;
+	font-size: 1em;
+}
 .social {
 	text-align: center;
 	overflow: auto;
